@@ -8,6 +8,12 @@ h1 {
   font-size: 3.5rem;
   line-height: 1.5;
 }
+h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
 h3 {
   font-family: "Montserrat";
   font-size: 1.5rem;
@@ -17,7 +23,7 @@ p {
   color: #8F8F8F;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 #title {
   background-color: #FF4C68;
@@ -51,10 +57,15 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
+/* Features Section */
 #features {
   padding: 7% 15%;
+  background-color: #FFF;
+  position: relative;
 }
 .feature-box {
   padding: 5%;
@@ -66,4 +77,37 @@ p {
 }
 .feature-icon:hover {
   color: #FF4C68;
+}
+
+/* Testimonial Section */
+#testimonials {
+  text-align: center;
+  background-color: #EF8172;
+  color: #FFF;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item {
+    padding: 7% 15%;
+}
+#press {
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: #EF8172;
+}
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 200px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
 }

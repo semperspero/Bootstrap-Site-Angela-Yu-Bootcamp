@@ -1,33 +1,30 @@
 
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-h2 {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.5;
-}
-h3 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
   font-weight: bold;
 }
 p {
   color: #8F8F8F;
 }
-.container-fluid {
-  padding: 3% 15% 7%;
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
-#title {
-  background-color: #FF4C68;
-  color: #FFF;
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* Containers */
+.container-fluid {
+  padding: 15% 7%;
 }
 
 /* Nav Bar */
@@ -53,6 +50,16 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+#title {
+  background-color: #FF4C68;
+  color: #FFF;
+  text-align: left;
+}
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Title Image */
 .title-image {
   width: 60%;
@@ -63,13 +70,14 @@ p {
 
 /* Features Section */
 #features {
-  padding: 7% 15%;
   background-color: #FFF;
   position: relative;
 }
+.feature-title {
+  font-size: 1.5rem;
+}
 .feature-box {
   padding: 5%;
-  text-align: center;
 }
 .feature-icon {
   color: #EF8172;
@@ -81,7 +89,6 @@ p {
 
 /* Testimonial Section */
 #testimonials {
-  text-align: center;
   background-color: #EF8172;
   color: #FFF;
 }
@@ -90,12 +97,12 @@ p {
   border-radius: 100%;
   margin: 20px;
 }
-.carousel-item {
-    padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 #press {
   padding-bottom: 3%;
-  text-align: center;
   background-color: #EF8172;
 }
 .press-logo {
@@ -106,8 +113,37 @@ p {
 /* Pricing Section */
 #pricing {
   padding: 200px;
-  text-align: center;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* CTA Section */
+#cta {
+  background-color: #FF4C68;
+  color: #FFF;
+}
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+  .testimonial-image {
+    width: 25%;
+    border-radius: 100%;
+    margin: 20px;
+  }
 }
